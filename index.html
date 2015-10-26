@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+		<script src="peer.js"></script>
+		<script src="paper-full.min.js"></script>
+		<script src="playingCards.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<canvas id="canvas" width="800" height="450" canvas="canvas" style="border: 1px solid; display: block; margin-left: auto; margin-right: auto"></canvas>
+		<input type="text" id="input" style="position: absolute; width: 200px; border: 2px solid; top: 100px; left: calc(50% - 100px)">
+		<input type="button" id="button" onclick="connect()" value="Connect to Peer ID" style="position: absolute; width: 200px; top: 150px; left: calc(50% - 100px)">
 		<script src="main.js"></script>
+		<img id="image" src="png/cardBack_red4.png" hidden>
 	</body>
 </html>
